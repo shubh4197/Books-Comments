@@ -1,0 +1,14 @@
+<div class="container-fluid">
+<label>Bookname:{{name}}</label>
+<br>
+<label>Price:{{price}}</label>
+<br>
+<label>Author:{{author}}</label>
+<br>
+<hr>
+<h5>Comments</h5>
+<br>
+<div *ngFor="let comment of comments">
+<p>{{comment.name}}:{{comment.comments}}</p>
+</div>
+</div>

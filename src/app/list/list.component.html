@@ -1,0 +1,22 @@
+<div class="container">
+<table class="table">
+    <thead>
+      <tr>
+        
+        <th scope="col">Title</th>
+        <th scope="col">Price</th>
+        <th scope="col">Author</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let lis of list.user">
+        <td>{{lis.name}}</td>
+        <td>{{lis.price}}</td>
+        <td>{{lis.Author}}</td>
+        <a type="submit" class="btn btn-primary" routerLink="/edit/{{lis.id}}">Edit</a>
+        <a type="submit" class="btn btn-primary" routerLink="/comments/{{lis.id}}">Comment</a>
+        <a type="submit" class="btn btn-primary" routerLink="/view/{{lis.id}}">View Details</a>
+      </tr>
+    </tbody>
+  </table>
+</div>
