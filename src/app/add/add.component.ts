@@ -21,6 +21,7 @@ export class AddComponent implements OnInit {
 
   addition(){
     this.newUser=new User(this.Data.user.length,this.name,this.price,this.author);
+    console.log(this.newUser);
     this.Data.add(this.newUser);
   }
 
